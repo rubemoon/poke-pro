@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  --line-color: #e5e7eb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.borderBlack {
+  @apply border border-black/10;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.vertical-timeline-element-content.is-hidden {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.vertical-timeline-element-icon.is-hidden {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }

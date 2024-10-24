@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Poke Pro
 
-First, run the development server:
+[![GitHub](https://img.shields.io/github/stars/rubemoon/poke-pro?style=social)](https://github.com/rubemoon/poke-pro)
+![Licença](https://img.shields.io/github/license/rubemoon/poke-pro)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descrição
+O **Poke Pro** é uma aplicação web desenvolvida em Next.js que permite explorar e aprender sobre diferentes Pokémon usando a PokeAPI. Você pode descobrir estatísticas, habilidades e evoluções de todos os Pokémon, além de construir times personalizados.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
+- Exploração completa de todos os Pokémon.
+- Visualização de detalhes de cada Pokémon, incluindo habilidades e estatísticas.
+- Sistema de navegação amigável e responsivo.
+- Modo claro e escuro.
+- Integração direta com a [PokeAPI](https://pokeapi.co).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
+- **Next.js** - Framework React para renderização do lado do servidor.
+- **Tailwind CSS** - Framework CSS utilitário para estilização.
+- **PokeAPI** - API para obtenção de dados dos Pokémon.
+- **TypeScript** - Para tipagem estática do JavaScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalação e Uso
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/rubemoon/poke-pro.git
+   cd poke-pro
+   ```
 
-## Learn More
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Rode o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Abra seu navegador e acesse `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Navegação
+- **Home**: Página inicial com introdução e visão geral.
+- **Pokémon**: Lista de todos os Pokémon com uma árvore de evolução e filtros.
+- **Documentação**: Documentação da PokeAPI disponível [aqui](https://pokeapi.co/docs/v2).
 
-## Deploy on Vercel
+## Screenshots
+### Screenshot 1
+![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-33-53.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Screenshot 2
+![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-35-32.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Screenshot 3
+![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-36-06.png)
+
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](https://github.com/rubemoon/poke-pro/blob/master/LICENSE)

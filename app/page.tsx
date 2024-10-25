@@ -1,28 +1,33 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Spinner from "@/components/Spinner"; 
-import PokemonTree from "@/components/pokemon/PokemonTree";
+import { fetchPokemon } from "./actions/getPokemon";
+import PokemonTreeClient from "@/components/pokemon/PokemonTree";
 
-function HomePage() {
-  const [loading, setLoading] = useState(true);
+const HomePage = async ({
+  searchParams,
+}: {
+  searchParams: {
+    [key: string]: string | string[] | undefined;
+  };
+}) => {
+  const search =
+    typeof searchParams.search === "string"
+      ? searchParams.search
+      : undefined;
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); 
+  const pokemon = await fetchPokemon({ search });
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Spinner />;
-  }
+  const theme = "light"; 
+  const error = null;
 
   return (
     <div className="max-w-4xl mx-auto">
-      <PokemonTree type={"pokemon"}  />
+      <PokemonTreeClient
+        type="pokemon"
+        items={pokemon}
+        theme={theme}
+        error={error}
+      />
     </div>
   );
-}
+};
 
 export default HomePage;

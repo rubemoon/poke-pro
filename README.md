@@ -44,15 +44,8 @@ O **Poke Pro** é uma aplicação web desenvolvida em Next.js que permite explor
 - **Pokémon**: Lista de todos os Pokémon com uma árvore de evolução e filtros.
 - **Documentação**: Documentação da PokeAPI disponível [aqui](https://pokeapi.co/docs/v2).
 
-## Screenshots
-### Screenshot 1
-![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-33-53.png)
-
-### Screenshot 2
-![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-35-32.png)
-
-### Screenshot 3
-![Screenshot](./public/screenshot/Screenshot%20from%202024-10-23%2021-36-06.png)
+## Screenshot
+![Screenshot](./public/screenshot/Screenshot%20from%202024-10-25%2012-52-07.png)
 
 ## Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](https://github.com/rubemoon/poke-pro/blob/master/LICENSE)

@@ -4,10 +4,30 @@
 
 html {
   --line-color: #e5e7eb;
+  --bg-light: #f3f4f6;
+  --bg-dark: rgba(255, 255, 255, 0.05);
+  --border-light: 1px solid #6366f1;
+  --border-dark: 1px solid rgba(0, 0, 0, 0.05);
+  --arrow-light: 0.4rem solid #6366f1;
+  --arrow-dark: 0.4rem solid rgba(255, 255, 255, 0.5);
+  --icon-bg-light: white;
+  --icon-bg-dark: #6366f1;
+  --icon-shadow-light: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
+  --icon-shadow-dark: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
 }
 
 html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
+  --bg-light: rgba(255, 255, 255, 0.05);
+  --bg-dark: #f3f4f6;
+  --border-light: 1px solid rgba(0, 0, 0, 0.05);
+  --border-dark: 1px solid #6366f1;
+  --arrow-light: 0.4rem solid rgba(255, 255, 255, 0.5);
+  --arrow-dark: 0.4rem solid #6366f1;
+  --icon-bg-light: #6366f1;
+  --icon-bg-dark: white;
+  --icon-shadow-light: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
+  --icon-shadow-dark: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
 }
 
 .borderBlack {

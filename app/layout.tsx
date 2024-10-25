@@ -2,11 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
 import { metadata } from "@/lib/data";
-import Head from "next/head";
 import Navbar from "@/components/navbar";
-import ThemeContextProvider from "@/context/theme-context";
-import PokeAPIContextProvider from "@/context/pokemon-api-context";
-import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeSwitch from "@/components/theme-switch";
 import { Toaster } from 'react-hot-toast';
 
@@ -19,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth h-full">
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
@@ -35,21 +31,15 @@ export default function RootLayout({
         {metadata["twitter:image"] && <meta name="twitter:image" content={metadata["twitter:image"]} />}
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </head>
       <body
         className={`${inter.className} bg-white text-gray-900 flex flex-col min-h-screen dark:bg-gray-900 dark:text-white`}
       >
-       <ThemeContextProvider>
-          <PokeAPIContextProvider> 
-            <ActiveSectionContextProvider>
-              <Navbar />
-              <main className="flex-grow ">{children}</main>
-              <Footer />
-              <Toaster position="top-right" />
-              <ThemeSwitch />
-            </ActiveSectionContextProvider>
-          </PokeAPIContextProvider>
-        </ThemeContextProvider>
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <Toaster position="top-right" />
+        <ThemeSwitch />
       </body>
     </html>
   );

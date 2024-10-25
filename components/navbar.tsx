@@ -44,22 +44,9 @@ export default function Navbar() {
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
             {navigations.map((nav) => (
               <div key={nav.name} className="relative group">
-                <Link href={nav.path} className="text-sm hover:text-neutral-300 md:py-4">
+                <Link href={nav.path} className="text-sm hover:text-neutral-300 md:py-4" target={nav.target || "_self"}>
                   {nav.name}
                 </Link>
-                {nav.subcategories && (
-                  <div className="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded-md shadow-lg group-hover:block md:group-hover:block md:group-focus:block">
-                    <ul className="py-2">
-                      {nav.subcategories.map((sub) => (
-                        <li key={sub.name}>
-                          <Link href={sub.path} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </div>
             ))}
             <div>

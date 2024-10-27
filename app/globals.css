@@ -14,6 +14,14 @@ html {
   --icon-bg-dark: #6366f1;
   --icon-shadow-light: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
   --icon-shadow-dark: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --accent-color: #a78bfa;
+  --muted-color: #e5e7eb;
+  --info-color: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
 }
 
 html.dark {
@@ -28,20 +36,20 @@ html.dark {
   --icon-bg-dark: white;
   --icon-shadow-light: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
   --icon-shadow-dark: 0 0 0 0.2rem rgba(103, 108, 239, 0.5);
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --accent-color: #a78bfa;
+  --muted-color: #e5e7eb;
+  --info-color: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
 }
 
 .borderBlack {
   @apply border border-black/10;
 }
 
-.vertical-timeline-element-content.is-hidden {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.vertical-timeline-element-icon.is-hidden {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+#menu-toggle:checked + label + #menu {
+  display: block;
 }

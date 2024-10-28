@@ -22,9 +22,6 @@ const AbilityPage = async () => {
             >
               {ability.name}
             </Link>
-            <article className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-              {ability.effect}
-            </article>
           </li>
         ))}
       </ul>

@@ -20,7 +20,7 @@ export async function fetchPokemonList({ query = "", page = 1, limit = 24 }: { q
   const apiUrl = `${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`;
 
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);
     }
@@ -44,7 +44,7 @@ export async function fetchPokemonList({ query = "", page = 1, limit = 24 }: { q
 export async function fetchPokemonDetails(name: string): Promise<PokemonData | null> {
   const apiUrl = `${BASE_URL}/pokemon/${name}`;
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching Pokémon details: ${response.statusText}`);
     }
@@ -59,7 +59,7 @@ export async function fetchPokemonDetails(name: string): Promise<PokemonData | n
 export async function fetchPokemonType(name: string): Promise<PokemonType | null> {
   const apiUrl = `${BASE_URL}/type/${name}`;
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching Pokémon type: ${response.statusText}`);
     }
@@ -74,7 +74,7 @@ export async function fetchPokemonType(name: string): Promise<PokemonType | null
 export async function fetchPokemonTypes(): Promise<{ name: string; url: string }[]> {
   const apiUrl = `${BASE_URL}/type`;
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching Pokémon types: ${response.statusText}`);
     }
@@ -89,7 +89,7 @@ export async function fetchPokemonTypes(): Promise<{ name: string; url: string }
 export async function fetchAbility(name: string): Promise<AbilityData | null> {
   const apiUrl = `${BASE_URL}/ability/${name}`;
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching ability: ${response.statusText}`);
     }
@@ -101,12 +101,10 @@ export async function fetchAbility(name: string): Promise<AbilityData | null> {
   }
 }
 
-export async function fetchAbilities(): Promise<{
-  [x: string]: any; name: string; url: string
-}[]> {
+export async function fetchAbilities(): Promise<{ name: string; url: string }[]> {
   const apiUrl = `${BASE_URL}/ability`;
   try {
-    const response = await fetch(apiUrl, { cache: "no-store" });
+    const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Error fetching abilities: ${response.statusText}`);
     }

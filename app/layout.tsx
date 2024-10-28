@@ -28,6 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "Explore Pokémon, their stats, abilities, and more.",
       images: ["/logo.svg"],
     },
+    metadataBase: new URL("https://poke.kozenetpro.com"),
   };
 }
 

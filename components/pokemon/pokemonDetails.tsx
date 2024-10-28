@@ -1,5 +1,6 @@
 import { PokemonData } from "@/lib/types";
 import Link from "next/link";
+import Image from "next/image";
 
 interface PokemonDetailsProps {
   pokemonData: PokemonData;
@@ -17,9 +18,11 @@ const PokemonDetails: React.FC<PokemonDetailsProps> = ({ pokemonData }) => {
         </Link>
       </div>
       <div className="flex flex-col items-center mb-6">
-        <img
+        <Image
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonData.id}.png`}
           alt={pokemonData.name}
+          width={192}
+          height={192}
           className="w-48 h-48 mb-4"
         />
         <div className="flex flex-col md:flex-row gap-4">

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiGithub, FiMenu, FiX } from "react-icons/fi";
-import { navigations, APP_NAME, MY_GITHUB_REPO } from "@/lib/data";
+import { NAVIGATIONS, APP_NAME, MY_GITHUB_REPO } from "@/lib/constants";
 import ButtonPrimary from "@/components/ui/ButtonPrimary";
 
 export default function Navbar() {
@@ -42,30 +42,30 @@ export default function Navbar() {
 
         <div id="navbar-collapse" className={`${isOpen ? "block" : "hidden"} md:block`}>
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
-            {navigations.map((nav) => (
+            {NAVIGATIONS.map((nav) => (
               <div key={nav.name} className="relative group">
-                <Link href={nav.path} className="text-sm hover:text-neutral-300 md:py-4" target={nav.target || "_self"}>
+                <Link href={nav.path} className="text-sm hover:text-neutral-300 md:py-4" target={nav.external ? "_blank" : "_self"}>
                   {nav.name}
                 </Link>
               </div>
             ))}
             <div>
-                <ButtonPrimary
+              <ButtonPrimary
                 as="a"
                 href={MY_GITHUB_REPO}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ver Repositório no GitHub"
                 className="flex items-center gap-2"
-                >
+              >
                 <FiGithub size={20} />
                 View on GitHub
-                </ButtonPrimary>
+              </ButtonPrimary>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    
+
   );
 }

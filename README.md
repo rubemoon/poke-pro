@@ -45,7 +45,7 @@ O **Poke Pro** é uma aplicação web desenvolvida em Next.js que permite explor
 - **Documentação**: Documentação da PokeAPI disponível [aqui](https://pokeapi.co/docs/v2).
 
 ## Screenshot
-![Screenshot](./public/screenshot/Screenshot%20from%202024-10-25%2012-52-07.png)
+![Screenshot](./public/screenshot/Screenshot%20from%202024-10-27%2019-27-55.png)
 
 ## Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](https://github.com/rubemoon/poke-pro/blob/master/LICENSE)

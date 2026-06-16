@@ -1,8 +1,22 @@
+# 🐱 Poke Pro
 
-# Poke Pro
+<p align="center">
 
-[![GitHub](https://img.shields.io/github/stars/rubemoon/poke-pro?style=social)](https://github.com/rubemoon/poke-pro)
-![Licença](https://img.shields.io/github/license/rubemoon/poke-pro)
+<a href="https://github.com/rubemoon/poke-pro">
+  <img src="https://img.shields.io/github/stars/rubemoon/poke-pro?style=for-the-badge" alt="Stars">
+</a>
+
+<img src="https://img.shields.io/github/license/rubemoon/poke-pro?style=for-the-badge" alt="License">
+
+<img src="https://img.shields.io/github/last-commit/rubemoon/poke-pro?style=for-the-badge" alt="Last Commit">
+
+<img src="https://img.shields.io/github/repo-size/rubemoon/poke-pro?style=for-the-badge" alt="Repo Size">
+
+</p>
+
+<p align="center">
+A modern Pokémon explorer built with Next.js, TypeScript, Tailwind CSS and PokeAPI.
+</p>
 
 ## Descrição
 O **Poke Pro** é uma aplicação web desenvolvida em Next.js que permite explorar e aprender sobre diferentes Pokémon usando a PokeAPI. Você pode descobrir estatísticas, habilidades e evoluções de todos os Pokémon, além de construir times personalizados.

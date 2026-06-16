@@ -7,6 +7,6 @@ export const AUTHOR = 'Rubens Jean Simon';
 export const BASE_URL = 'https://pokeapi.co/api/v2';
 export const MY_GITHUB_REPO = 'https://github.com/rubemoon/poke-pro';
 export const COPYRIGHT_YEAR = new Date().getFullYear();
-export const AUTHOR_URL = 'https://brand.kozenetpro.com';
+export const AUTHOR_URL = 'https://www.linkedin.com/in/rubens-jean-simon';
 export const POKE_API_URL = 'https://pokeapi.co';
 export const SCREENSHOT = screenshot;
